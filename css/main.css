@@ -26,21 +26,17 @@ h1 {
 }
 
 
-.btn {
+.btn1 {
 	background-color: #ccc;
 	color: black;
 	font-weight: bold;
 	text-decoration: none;
-	padding: .5em 1em;
-	margin: .5em;
-	border-radius: 5px;
-	display: inline-block;
+
 }
 
-.btn:hover,
-.btn:active,
-.btn:focus{
- 	background-color: #aaa;
+
+.btn1:active {
+ 	position:
   
 }
 
