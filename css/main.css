@@ -21,6 +21,9 @@ html {
 .header {
 	text-align-last: center;
 }
+h1 {
+	font-size: 250%;
+}
 
 
 .btn {
