@@ -20,9 +20,12 @@ html {
 
 .header {
 	text-align-last: center;
+	display: block;
+	position: relative;
 }
 h1 {
 	font-size: 250%;
+	margin: 0 auto;
 }
 
 
@@ -31,12 +34,14 @@ h1 {
 	width: 5em;
 	position: relative;
 	left: 5em;
-	top: 10em;
+	font-size: 500%;
+	top: 3em;
+	color: black;
 }
 
-.btn1:active {
-    -webkit-animation: gun .5s ease-in-out infinite alternate;
-    animation: gun .5s ease-in-out infinite alternate;
+.btn1:focus {
+    -webkit-animation: gun .25s ease-in-out forwards;
+    animation: gun .25s ease-in-out forwards;
 }
 @-webkit-keyframes gun {  
     0% {
@@ -63,41 +68,50 @@ h1 {
 
 .can {
 	text-decoration: none;
-	width: 5em;
+	font-size: 500%;
 	position: relative;
-	right: 15em;
-	top: 10em;
+	left:10em;
+	top: 1.8em;
+	transform-origin: left;
 }
 
-.btn1:active #can	{
-    -webkit-animation: can 1s ease-in-out infinite alternate;
-    animation: can 1s ease-in-out infinite alternate;
+.btn1:focus ~ #can	{
+    -webkit-animation: can 1s ease-in-out forwards;
+    animation: can 1s ease-in-out forwards;
 }
-@-webkit-keyframes oooh2 {  
+@-webkit-keyframes can {  
     0% {
-     transform:rotate(0deg);
-	right: 15em;
-	top: 10em;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); 
+    transform: rotate(0deg);
+	top: 1.8em;
+	left: 10em;
     }
-	50% {
-	right: 13em;
-	top; 7em;
-}
-	
+	30% {
+	top: 0em;
+	left: 10em;
+}	
 	100% {
-    transform:rotate(720deg);
-	right: 15em;
-	top; 10em;
+    -ms-transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+	top: 1.8em;
+	left: 10em;
 	}
 }
-@keyframes oooh2 {
-    0% {
-     left: 5em;   
+@keyframes can {
+    0% { 
+    transform: rotate(0deg);
+	top: 1.8em;
+	left: 10em;
     }
-    50% {
-	 left:4.5em;
-	}
+	30% {
+	top: 0em;
+	left: 10em;
+}	
 	100% {
-      left: 5em;
-    }
+    transform: rotate(720deg);
+	top: 1.8em;
+	left: 10em;
+	}
 }
