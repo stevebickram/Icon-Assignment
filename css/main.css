@@ -18,6 +18,11 @@ html {
 	box-sizing: inherit;
 }
 
+.header {
+	text-align-last: center;
+}
+
+
 .btn {
 	background-color: #ccc;
 	color: black;
