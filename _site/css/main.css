@@ -31,13 +31,14 @@ h1 {
 	width: 5em;
 	position: relative;
 	left: 5em;
+	top: 10em;
 }
 
 .btn1:active {
-    -webkit-animation: oooh2 1s ease-in-out infinite alternate;
-    animation: oooh2 1s ease-in-out infinite alternate;
+    -webkit-animation: gun .5s ease-in-out infinite alternate;
+    animation: gun .5s ease-in-out infinite alternate;
 }
-@-webkit-keyframes oooh2 {  
+@-webkit-keyframes gun {  
     0% {
      left: 5em;   
     }
@@ -47,6 +48,47 @@ h1 {
 	100% {
       left: 5em;
     }
+}
+@keyframes gun {
+    0% {
+     left: 5em;   
+    }
+    50% {
+	 left:4.5em;
+	}
+	100% {
+      left: 5em;
+    }
+}
+
+.can {
+	text-decoration: none;
+	width: 5em;
+	position: relative;
+	right: 15em;
+	top: 10em;
+}
+
+.btn1:active #can	{
+    -webkit-animation: can 1s ease-in-out infinite alternate;
+    animation: can 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes oooh2 {  
+    0% {
+     transform:rotate(0deg);
+	right: 15em;
+	top: 10em;
+    }
+	50% {
+	right: 13em;
+	top; 7em;
+}
+	
+	100% {
+    transform:rotate(720deg);
+	right: 15em;
+	top; 10em;
+	}
 }
 @keyframes oooh2 {
     0% {
@@ -58,10 +100,4 @@ h1 {
 	100% {
       left: 5em;
     }
-}
-
-.btn i {
-  	vertical-align: middle;
-  	padding: 0 1em 0 0;
-	
 }
